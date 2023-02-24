@@ -1,1 +1,0 @@
-import{_ as o}from"./_plugin-vue_export-helper-c27b6911.js";import{o as e,f as n}from"./index-76bef54f.js";const t={};function r(c,p,s,a,_,f){return e(),n("div",null," coupon ")}const i=o(t,[["render",r]]);export{i as default};
