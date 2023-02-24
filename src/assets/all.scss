@@ -1,0 +1,19 @@
+@import "./style/base/reset";
+@import "./style/base/fontStyle";
+
+@import "bootstrap/scss/functions";
+@import "./style/utils/variable"; //自定義參數
+@import "./style/helpers/variables"; //覆蓋原始檔
+
+@import "bootstrap/scss/bootstrap.scss";
+
+@import "./style/base/base";
+
+@import "./style/utils/mixin";
+
+@import "./style/layout/aside";
+@import "./style/helpers/pagination"; // 自定義分頁樣式
+
+@import "./style/pages/index";
+
+@import "./style/utils/utils";

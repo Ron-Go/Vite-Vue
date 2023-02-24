@@ -1,0 +1,95 @@
+/*------------------------------------*\
+    $base
+\*------------------------------------*/
+body{
+  line-height: 1.5;
+  color: $gray-900;
+  font-family: $font-family-base;
+}
+h1{
+  font-size: $font-size-base * 1;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+h2{
+  font-size: $font-size-base * 3; //48px
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+h3{
+  font-size: $font-size-base * 1.75; //28px
+  line-height: 1.5;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+h4{
+  font-size: $font-size-base * 1.5; //24px
+  line-height: 1.5;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+h5{
+  font-size: $font-size-base * 1.125; //18px
+  line-height: 1.5;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+th{
+  font-weight: bold;
+}
+
+li{
+  font-size: $font-size-base * 1.25;
+  line-height: 1.5;
+}
+
+p{
+  font-size: $font-size-base * 1; //16px
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+a{
+  font-size: $font-size-base * 1; //16px
+  text-decoration: none;
+  font-weight: 400;
+  color: $color-font-base;
+}
+
+span{
+  display: inline-block;
+  font-size: $font-size-base * 1;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+img{
+  vertical-align: middle;
+}
+
+figcaption{
+  font-size: $font-size-base * 3;
+  line-height: 1.5;
+}
+
+label{
+  display: block;
+  color: #000000;
+  font-size: $font-size-base * 1;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+}
+
+::placeholder{
+  color: rgba(0, 0, 0, 0.2);
+}
+
+button:focus{
+  outline: 0px;
+}
+

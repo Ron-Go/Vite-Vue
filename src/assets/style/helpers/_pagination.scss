@@ -1,0 +1,23 @@
+
+.page{
+  &-link{
+    color: $success;
+    &.active{
+      background-color: $success;
+      border-color: $success;
+      &:hover{
+        color: $white;
+      }
+    }
+    &:hover{
+      :not(:focus){
+        color: $success;
+      }
+      color: $success;
+    }
+    &:focus{
+      border-color: $success;
+      box-shadow: 2px 2px 2px rgba($color: $success, $alpha: 0.3);
+    }
+  }
+}

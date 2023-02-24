@@ -1,0 +1,82 @@
+.body__container{
+  
+}
+.aside{
+  width: 200px;
+  height: 100vh;
+  background-color: $color-bgc-aside;
+  &__logo{
+    margin-bottom: 28px;
+    &__link{
+      width: 150px;
+      height: 40px;
+      display: block;
+      background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/logo-ANSWER.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      text-indent: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}
+
+.aside{
+  &__list{
+    &__item{
+      position: relative;
+      .item__link{
+        transition: all 0.3s ease-in-out;
+        &::before{
+          position: absolute;
+          top: 0px;
+          left: -32px;
+          content: "";
+          width: 0px;
+          height: 100%;
+          background-color: $color-font-success;
+          transition: all 0.6s ease-in-out;
+        }
+        &:hover{
+          color: $color-font-success;
+          // &::before{
+          //   width: 8px;
+          // }
+        }
+        &.router-link-exact-active{
+          color: $color-font-success;
+          &::before{
+            width: 8px;
+          }
+        }
+      }
+      & + .aside__list__item{
+        margin-top: $spacer * 1;
+      }
+    }
+  }
+  &__user{
+    &__img{
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week5/andychen.jpeg?raw=true);
+      width: 40px;
+      height: 40px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    &__content{
+      .name{
+        line-height: 1.25;
+      }
+      .email{
+        line-height: .875;
+      }
+    }
+  }
+}
+
+main{
+  width: calc(100% - 232px);
+}
+

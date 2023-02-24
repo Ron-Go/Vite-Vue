@@ -1,0 +1,63 @@
+/*------------------------------------*\
+    $index
+\*------------------------------------*/
+.list-group-item{
+  transition: all 0.3s ease-in-out;
+  &:hover{
+    background-color: #F8F9FA;
+  }
+}
+.assign{
+  &__search, &__point{
+    span{
+      vertical-align: -6px;
+    }
+  }
+  &__select{
+    margin-bottom: 6px;
+  }
+}
+
+.comments{
+  line-height: 20px;
+  margin-bottom: 6px;
+}
+
+.assign__message__body {
+  margin-top: -1px;
+}
+
+.sender{
+  &__img{
+    width: 40px;
+    height: 40px;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week5/emilywang.jpeg?raw=true);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  &__content .btn{
+    span{
+      vertical-align: -6px;
+    }
+  }
+}
+
+.addressee{
+  &__img{
+    width: 40px;
+    height: 40px;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week5/andychen.jpeg?raw=true);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.operate__page{
+  &__previous, &__next{
+    & span{
+      vertical-align: -6px;
+    }
+  }
+}
