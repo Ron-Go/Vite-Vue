@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper-c27b6911.js";import{o as t,c as s,a as o}from"./index-0903f845.js";const c={},n={class:"d-flex justify-content-center align-items-center",style:{height:"100vh"}},r=o("h2",{class:""},"產品清單",-1),a=[r];function _(i,d,p,f,l,h){return t(),s("div",n,a)}const x=e(c,[["render",_]]);export{x as default};
