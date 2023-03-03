@@ -23,6 +23,8 @@ import zhTW from '@vee-validate/i18n/dist/locale/zh_TW.json';
 import Swal from 'sweetalert2/dist/sweetalert2.js';
 import 'sweetalert2/src/sweetalert2.scss';
 
+import 'vue3-loading-overlay/dist/vue3-loading-overlay.css';
+
 import App from './App.vue';
 import router from './router';
 
@@ -38,11 +40,21 @@ configure({
 // 設定預設語系
 setLocale('zh_TW');
 
-const app = createApp(App);
+/* 建立實體 */
+const pinia = createPinia(); // pinia實體
+const app = createApp(App); // app實體
 
 app.use(createPinia());
 app.use(router);
 app.use(VueAxios, axios);
+pinia.use(({ store }) => {
+  store.$subscribe(() => {
+    // 訂閱store變化
+  });
+  store.$onAction(() => {
+    // 訂閱store actions
+  });
+});
 
 // 全域註冊表單驗證元件 vForm、vField、vField
 app.component('vForm', Form);

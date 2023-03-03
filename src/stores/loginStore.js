@@ -12,10 +12,10 @@ export default defineStore("loginStore", () => {
     username: '',
     password: '',
   });
-  let num = ref(10);
+  
   // API URL and PATH
   const url = import.meta.env.VITE_URL;
-  // const path = import.meta.env.VITE_PATH;
+  const path = import.meta.env.VITE_PATH;
   
   // 建立router實體，router若放在函式signin()作用域內會有問題
   const router = useRouter();
@@ -34,7 +34,7 @@ export default defineStore("loginStore", () => {
     } catch (err) {
       cleanInputValue();
       const { message } = err.response.data;
-      console.log(message);
+      await status.swAlert('center', 'error', message, false, false);
     }
   }
 
